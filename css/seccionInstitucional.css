@@ -1,0 +1,35 @@
+.seccionInstitucional {
+  color: #666;
+  text-align: center;
+}
+
+.seccionInstitucional-direccion {
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 1.2em 0;
+}
+
+.seccionInstitucional-telefono {
+  font-size: 1.2em;
+}
+
+.seccionInstitucional-video {
+  width: 100%;
+  max-width: 550px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+@media (min-width: 830px) {
+  .seccionInstitucional-columna {
+    float: left;
+    text-align: left;
+    width: 40%;
+  }
+
+  .seccionInstitucional-video {
+    width: 40%;
+    margin-top: 0;
+  }
+}

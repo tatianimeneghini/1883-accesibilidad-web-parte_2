@@ -1,0 +1,55 @@
+.seccionSobreNosotros {
+  color: #4f4c4c;
+}
+
+.seccionSobreNosotros-texto {
+  margin-bottom: 1em;
+}
+
+.seccionSobreNosotros-plataformas {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+.seccionSobreNosotros-imgDestacado {
+  display: none;
+}
+
+@media (min-width: 830px) {
+  .seccionSobreNosotros {
+    text-align: left;
+  }
+
+  .seccionSobreNosotros-titulo {
+    text-align: left;
+  }
+
+  .seccionSobreNosotros-imgDestacado {
+    display: block;
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 2em;
+  }
+
+  .seccionSobreNosotros-plataformas {
+    display: block;
+    padding-top: 1.5em;
+    position: relative;
+  }
+
+  .seccionSobreNosotros-plataformas:before {
+    content: "";
+    height: 1px;
+    width: 45%;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 4px;
+  }
+
+  .seccionSobreNosotros-plataformas li {
+    display: inline-block;
+    margin-right: 3em;
+    margin: 1em 3em 0 0;
+  }
+}

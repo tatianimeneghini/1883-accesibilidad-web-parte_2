@@ -1,0 +1,37 @@
+.seccionContacto {
+  background-color: #f7f4f4;
+  text-align: center;
+  text-align: left;
+}
+
+.seccionContacto-wink {
+  color: #9e0020;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.seccionContacto-form-fieldset {
+  border: 0;
+}
+
+.seccionContacto-form-legend {
+  max-width: 300px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.seccionContacto-form-cta {
+  width: 100%;
+  margin-top: 1em;
+  display: block;
+  background: transparent;
+  color: #9e0020;
+  border: 1px solid #9e0020;
+}
+
+.seccionContacto-form-cta:hover,
+.seccionContacto-form-cta:focus {
+  color: #fff;
+  background-color: #9e0020;
+}

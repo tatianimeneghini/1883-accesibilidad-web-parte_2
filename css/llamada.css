@@ -1,0 +1,63 @@
+.llamada {
+  position: absolute;
+  top: -2.5em;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #103d4a;
+  padding-bottom: 0.5em;
+}
+
+.llamada-logo {
+  margin-bottom: 0.2em;
+}
+
+.llamada-logo-img {
+  margin: 0 auto;
+  display: block;
+  transition: filter 0.3s;
+}
+
+.llamada-logo-img:hover,
+.llamada-logo-img:focus {
+  filter: brightness(1.2);
+}
+
+.llamada-nav {
+  text-align: center;
+}
+
+.llamada-nav-item {
+  display: inline-block;
+  line-height: 2;
+  margin: 0 0.5em;
+  font-size: 0.95em;
+}
+
+.llamada-nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Open Sans", serif;
+}
+
+.llamada-nav-item a:hover,
+.llamada-nav-item a:focus {
+  text-decoration: underline;
+}
+
+@media (min-width: 830px) {
+  .llamada {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .llamada-logo {
+    float: left;
+  }
+
+  .llamada-nav {
+    float: right;
+    margin-top: 1em;
+  }
+}

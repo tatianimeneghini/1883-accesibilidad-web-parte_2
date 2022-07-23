@@ -1,0 +1,146 @@
+.ventanaNewsletter {
+  display: none;
+}
+
+.ventanaNewsletter--abierto {
+  display: block;
+}
+
+.ventanaNewsletter-body {
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #8d8d8d;
+  padding: 3em 1.5em 1.5em 1.5em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: inline-block;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  z-index: 3;
+  transition: 0.3s ease-in;
+  color: #222;
+  width: 300px;
+  max-width: 533px;
+  text-align: left;
+}
+
+.ventanaNewsletter-overlay {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlayVentana + .ventanaNewsletter {
+  display: block;
+  transform: translate(-50%, -50%);
+}
+
+.ventanaNewsletter-titulo {
+  font-size: 1.8em;
+  line-height: 1;
+}
+
+.ventanaNewsletter-texto {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  font-weight: normal;
+}
+
+.ventanaNewsletter-label {
+  position: absolute;
+  z-index: -1;
+  left: -9999px;
+}
+
+.ventanaNewsletter-campo {
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #5e5e5e;
+  padding: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  min-width: 245px;
+}
+
+.ventanaNewsletter-btn {
+  vertical-align: top;
+  text-indent: -9999px;
+  border-radius: 8px;
+  border: 1px solid #ff1242;
+  padding: 8px;
+  width: 100%;
+  height: 3.1em;
+  background: url(../img/email.png) no-repeat center;
+  transition: 0.2s ease-in;
+}
+
+.ventanaNewsletter-btn:hover,
+.ventanaNewsletter-btn:focus {
+  background-color: #eb5757;
+  cursor: pointer;
+  background-image: url(../img/email-hover.png);
+}
+
+.ventanaNewsletter-cerrar {
+  position: absolute;
+  background-color: transparent;
+  transform: translate(50%, 50%) scale(1.4);
+  top: -5px;
+  right: 25px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border: 1px solid;
+  overflow: hidden;
+  color: transparent;
+  font-size: 0;
+}
+
+.ventanaNewsletter-cerrar:before {
+  content: "x";
+  color: #666;
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ventanaNewsletter-cerrar:hover:before,
+.ventanaNewsletter-cerrar:focus:before {
+  color: #ce3434;
+  cursor: pointer;
+}
+
+@media (min-width: 830px) {
+  .ventanaNewsletter-body {
+    width: 533px;
+  }
+
+  .ventanaNewsletter-form {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .ventanaNewsletter-campo {
+    flex-basis: 80%;
+  }
+
+  .ventanaNewsletter-btn {
+    flex-basis: 20%;
+    height: 3.1em;
+  }
+}

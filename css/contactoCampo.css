@@ -1,0 +1,117 @@
+.contactoCampo {
+  margin: 0.8em auto;
+  max-width: 600px;
+  position: relative;
+}
+
+.contactoCampo-label:before {
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: #fff;
+  transform: translate(-7px, -3px);
+  border: 1px solid #7d7d7d;
+  color: transparent;
+  line-height: 1;
+  transition: 0.2s ease-in;
+}
+
+.contactoCampo-checkbox:checked + .contactoCampo-label:before {
+  content: "x";
+  color: #fff;
+  background-image: radial-gradient(circle, #2da4e7, #2f80ed);
+}
+
+.contactoCampo-checkbox {
+  left: -9999px;
+  position: absolute;
+  opacity: 0;
+}
+
+.contactoCampo-icono {
+  position: absolute;
+  left: -2em;
+  top: 2.5em;
+  width: 1.5em;
+}
+
+.contactoCampo label,
+.contactoCampo input,
+.contactoCampo textarea {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.contactoCampo label {
+  margin-bottom: 5px;
+  margin-left: 8px;
+}
+
+.contactoCampo input,
+.contactoCampo textarea {
+  font-size: 1em;
+  padding: 0.5em;
+  min-height: 50px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  outline: 0;
+}
+
+.contactoCampo input:focus,
+.contactoCampo textarea:focus {
+  border: 2px solid #222;
+}
+
+.contactoCampo-campoDeshabilitado {
+  background-color: #ddd;
+}
+
+.contactoCampo-msg,
+.formcontacto-validacion {
+  margin-left: 4px;
+  margin-top: 4px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #aa0023;
+  display: inline-block;
+}
+
+.contactoCampo .contactoCampo--valido {
+  border: 2px solid #1b5f2b;
+  background-color: #fff;
+  position: relative;
+}
+
+.contactoCampo .contactoCampo--noValido {
+  border: 2px solid #aa0023;
+  background-color: #fff;
+  position: relative;
+}
+
+.contactoCampo--succeso:before {
+  content: "";
+  display: inline-block;
+  width: 33px;
+  height: 32px;
+  position: absolute;
+  z-index: 1;
+  right: 0.4em;
+  transform: translateY(112%) scale(0.65);
+  background-image: url(../img/validacion-succeso.png);
+}
+
+.contactoCampo--error:before {
+  content: "";
+  display: inline-block;
+  width: 33px;
+  height: 32px;
+  position: absolute;
+  z-index: 1;
+  right: 0.4em;
+  transform: translateY(112%) scale(0.65);
+  background-image: url(../img/validacion-error.png);
+}
