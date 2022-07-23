@@ -19,13 +19,13 @@
   display: none;
 }
 
-.listaDeArticulos-item:not(:target):first-child {
+/* .listaDeArticulos-item:not(:target):first-child {
   display: inline-block;
 }
 
 .listaDeArticulos-item:target {
   display: inline-block;
-}
+} */
 
 .listaDeArticulos-articulo-img {
   width: 100%;

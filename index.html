@@ -216,9 +216,10 @@
 
       <section class="seccionBlog container">
         <h2 class="seccionBlog-titulo tituloPatron">BLOG</h2>
+        <h3 class="ocultarVisualmente" id="tituloBlog">Lista de artículos más vistos en la semana</h3>
 
-        <ul class="listaDeArticulos">
-          <li id="new0" class="listaDeArticulos-item">
+        <ol class="listaDeArticulos" aria-labelledby="tituloBlog">
+          <li id="new0" class="listaDeArticulos-item" data-noticia="0">
             <article class="listaDeArticulos-articulo">
               <img src="img/10-aplicaciones-mas-descargadas.png" class="listaDeArticulos-articulo-img" alt="" />
               <h3 class="listaDeArticulos-articulo-titulo">
@@ -235,7 +236,7 @@
             </article>
           </li>
 
-          <li id="new1" class="listaDeArticulos-item">
+          <li id="new1" class="listaDeArticulos-item" data-noticia="1">
             <article class="listaDeArticulos-articulo">
               <img src="img/ux-usabilidad.jpg" class="listaDeArticulos-articulo-img"
                 alt="Una persona maneja su móvil" />
@@ -254,7 +255,7 @@
             </article>
           </li>
 
-          <li id="new2" class="listaDeArticulos-item">
+          <li id="new2" class="listaDeArticulos-item"  data-noticia="2">
             <article class="listaDeArticulos-articulo">
               <img src="img/dicas-accesibilidad.jpg" class="listaDeArticulos-articulo-img"
                 alt="Multitud sostien una persona en un concierto" />
@@ -271,7 +272,7 @@
               </p>
             </article>
           </li>
-        </ul>
+        </ol>
 
         <nav>
           <ul class="listaDeArticulos-slider">
@@ -279,6 +280,7 @@
               <a href="#new0" data-sliderItem="0"
                 class="listaDeArticulos-slider-item listaDeArticulos-slider-item--activo">
                 Noticia 1
+                <span class="ocultarVisualmente" id="ocultaVisualmente">(Slide actual)</span>
               </a>
             </li>
             <li>
