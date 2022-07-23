@@ -483,26 +483,26 @@
   </div>
   <!--final .contenidoFueraVentana-->
 
-  <div class="ventanaNewsletter" id="ventanaNewsletter">
+  <div class="ventanaNewsletter" id="ventanaNewsletter" role="dialog" aria-labelledby="tituloNewsletter">
     <div class="ventanaNewsletter-body">
-      <h2 class="ventanaNewsletter-titulo">Noticias sin spam</h2>
+      <h2 class="ventanaNewsletter-titulo" id="tituloNewsletter">Noticias sin spam</h2>
       <h3 class="ventanaNewsletter-texto">
         ¡Asigna nuestra newsletter para recibir noticias técnicas sin
         spam!
       </h3>
       <form class="ventanaNewsletter-form">
-        <label class="ventanaNewsletter-label"> Email: </label>
-        <input type="text" class="ventanaNewsletter-campo" placeholder="Escribe tu email..." />
-        <button class="ventanaNewsletter-btn">Asignar newsletter</button>
-        <button class="ventanaNewsletter-cerrar">X</button>
+        <label class="ventanaNewsletter-label" for="emailNewsletter"> Email: </label>
+        <input type="email" class="ventanaNewsletter-campo" id="emailNewsletter" placeholder="Escribe tu email..." />
+        <button class="ventanaNewsletter-btn" type="submit">Asignar newsletter</button>
+        <button class="ventanaNewsletter-cerrar" type="button" aria-label="Cerrar la ventana emergente">X</button>
       </form>
     </div>
     <div class="ventanaNewsletter-overlay"></div>
-  </div>
-  <!--final .ventanaNewsletter-->
+	<!-- final .ventanaNewsletter-->
 
   <!-- inicio de los scripts -->
   <script src="js/carousel.js"></script>
+  <script src="js/inert.js"></script>
   <script src="js/ventanaEmergente.js"></script>
   <!-- Fin de los scripts -->
 </body>
