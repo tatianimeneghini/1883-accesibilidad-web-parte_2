@@ -337,74 +337,76 @@
           <h2 class="tituloPatron">CONTACTO</h2>
 
           <form class="seccionContacto-form">
-            <p class="seccionContacto-form-legend">
-              ¡Hola!, ¿cómo estás? Comunicate con nosotros! Rellena tu información
-              y dejános un mensaje:
-            </p>
+            <fieldset>
+              <legend class="seccionContacto-form-legend">
+                ¡Hola!, ¿cómo estás? Comunicate con nosotros! Rellena tu información
+                y dejános un mensaje:
+              </legend>
 
-            <div class="contactoCampo contactoCampo--succeso">
-              <label for="nombre">Nombre: </label>
-              <input type="text" id="nombre" class="contactoCampo--valido" placeholder="Nombre..." required />
-            </div>
+              <div class="contactoCampo contactoCampo--succeso">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" class="contactoCampo--valido" placeholder="Nombre..." required />
+              </div>
 
-            <div class="contactoCampo contactoCampo--error">
-              <label for="email">Email: </label>
-              <input id="email" type="email" class="contactoCampo--noValido" required placeholder="Email..." />
-              <span class="contactoCampo-msg contactoCampo-msg--error">
-                ¿Quieres decir <a href="#">gmail.com?</a>
-              </span>
-            </div>
+              <div class="contactoCampo contactoCampo--error">
+                <label for="email">Email: </label>
+                <input id="email" type="email" class="contactoCampo--noValido" required placeholder="Email..." />
+                <span class="contactoCampo-msg contactoCampo-msg--error">
+                  ¿Quieres decir <a href="#">gmail.com?</a>
+                </span>
+              </div>
 
-            <div class="contactoCampo contactoCampo--error">
-              <label>Teléfono: </label>
-              <input type="text" class="contactoCampo--noValido" placeholder="+55 11 55712751" />
-              <span class="contactoCampo-msg contactoCampo-msg--error">Hace falta el código de área</span>
-            </div>
+              <div class="contactoCampo contactoCampo--error">
+                <label for="telefono">Teléfono: </label>
+                <input id="telefono" type="text" class="contactoCampo--noValido" placeholder="+55 11 55712751" />
+                <span class="contactoCampo-msg contactoCampo-msg--error">Hace falta el código de área</span>
+              </div>
 
-            <div class="contactoCampo">
-              <label>Código Postal: </label>
-              <input type="text" maxlength="8" placeholder="Ejemplo: 04101-300" required />
-            </div>
+              <div class="contactoCampo">
+                <label for="codigo-postal">Código Postal: </label>
+                <input id="codigo-postal" type="text" maxlength="8" placeholder="Ejemplo: 04101-300" required />
+              </div>
 
-            <div class="contactoCampo">
-              <label>Dirección: </label>
-              <input type="text" class="contactoCampo-campoDeshabilitado" readonly value="Calle Vergueiro" />
-            </div>
+              <div class="contactoCampo">
+                <label for="direccion">Dirección: </label>
+                <input id="direccion" type="text" class="contactoCampo-campoDeshabilitado" readonly value="Calle Vergueiro" />
+              </div>
 
-            <div class="contactoCampo">
-              <label>Barrio: </label>
-              <input type="text" class="contactoCampo-campoDeshabilitado" disabled value="Villa Mariana" />
-            </div>
+              <div class="contactoCampo">
+                <label for="barrio">Barrio: </label>
+                <input id="barrio" type="text" class="contactoCampo-campoDeshabilitado" disabled value="Villa Mariana" />
+              </div>
 
-            <div class="contactoCampo">
-              <label>Ciudad: </label>
-              <input type="text" class="contactoCampo-campoDeshabilitado" disabled value="São Paulo" />
-            </div>
+              <div class="contactoCampo">
+                <label for="ciudad">Ciudad: </label>
+                <input id="ciudad" type="text" class="contactoCampo-campoDeshabilitado" disabled value="São Paulo" />
+              </div>
 
-            <div class="contactoCampo">
-              <label>Província: </label>
-              <input type="text" class="contactoCampo-campoDeshabilitado" disabled value="SP" />
-            </div>
+              <div class="contactoCampo">
+                <label for="provincia">Província: </label>
+                <input id="provincia" type="text" class="contactoCampo-campoDeshabilitado" disabled value="SP" />
+              </div>
 
-            <div class="contactoCampo">
-              <label>Mensaje: </label>
-              <textarea name="" cols="30" rows="10" required></textarea>
-            </div>
+              <div class="contactoCampo">
+                <label for="mensaje">Mensaje: </label>
+                <textarea id=mensaje name="" cols="30" rows="10" required></textarea>
+              </div>
 
-            <div class="contactoCampo">
-              <input type="checkbox" checked value="recibirdestacados" class="contactoCampo-checkbox"
-                id="recibirCorreo" />
-              <label class="contactoCampo-label" for="recibirCorreo">Recibir noticias por correo</label>
-            </div>
+              <div class="contactoCampo">
+                <input type="checkbox" checked value="recibirdestacados" class="contactoCampo-checkbox"
+                  id="recibirCorreo" />
+                <label class="contactoCampo-label" for="recibirCorreo">Recibir noticias por correo</label>
+              </div>
 
-            <div class="contactoCampo">
-              <button class="seccionContacto-form-cta btnPatron" type="submit">
-                Envía tu mensaje
-              </button>
-              <span class="contactoCampo-msg contactoCampo-msg--error seccionContactoForm-validacion">
-                Chequea los errores arriba
-              </span>
-            </div>
+              <div class="contactoCampo">
+                <button class="seccionContacto-form-cta btnPatron" type="submit">
+                  Envía tu mensaje
+                </button>
+                <span class="contactoCampo-msg contactoCampo-msg--error seccionContactoForm-validacion">
+                  Chequea los errores arriba
+                </span>
+              </div>
+            </fieldset>
           </form>
         </div>
         <!--final .container da .seccionContacto-->
@@ -506,6 +508,7 @@
   <script src="js/carousel.js"></script>
   <script src="js/inert.js"></script>
   <script src="js/ventanaEmergente.js"></script>
+  <script src="js/validacionCodigoPostal.js"></script>
   <!-- Fin de los scripts -->
 </body>
 

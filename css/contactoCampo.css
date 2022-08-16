@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.contactoCampo-label {
+  position: relative;
+}
+
 .contactoCampo-label:before {
   content: "";
   vertical-align: middle;
@@ -17,12 +21,35 @@
   color: transparent;
   line-height: 1;
   transition: 0.2s ease-in;
+  box-sizing: border-box;
+}
+
+.contactoCampo-checkbox:hover + .contactoCampo-label:before,
+.contactoCampo-checkbox:focus + .contactoCampo-label:before {
+  border: 2px solid #333;
 }
 
 .contactoCampo-checkbox:checked + .contactoCampo-label:before {
-  content: "x";
+  content: "";
   color: #fff;
   background-image: radial-gradient(circle, #2da4e7, #2f80ed);
+  border-color: transparent;
+  line-height: 1;
+}
+
+.contactoCampo-checkbox:checked + .contactoCampo-label:after {
+  content: "";
+  width: 10px;
+  height: 5px;
+  display: block;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  position: relative;
+  z-index: 2;
+  left: 2px;
+  transform: rotate(-45deg);
+  left: -3px;
+  top: -18px;
 }
 
 .contactoCampo-checkbox {
