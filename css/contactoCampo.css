@@ -104,7 +104,7 @@
   font-size: 0.9em;
   font-weight: bold;
   color: #aa0023;
-  display: inline-block;
+  display: none;
 }
 
 .contactoCampo .contactoCampo--valido {

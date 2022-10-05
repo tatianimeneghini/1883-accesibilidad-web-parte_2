@@ -177,7 +177,7 @@
 
           <div class="seccionPlanes-planes seccionPlanes-planes--ultra">
             <h2 class="seccionPlanes-planes-titulo">
-              <span class="ocultarVisualmente">Plan</span> 
+              <span class="ocultarVisualmente">Plan</span>
               Ultra
             </h2>
             <h3 class="seccionPlanes-planes-precio">$ 1500</h3>
@@ -255,7 +255,7 @@
             </article>
           </li>
 
-          <li id="new2" class="listaDeArticulos-item"  data-noticia="2">
+          <li id="new2" class="listaDeArticulos-item" data-noticia="2">
             <article class="listaDeArticulos-articulo">
               <img src="img/dicas-accesibilidad.jpg" class="listaDeArticulos-articulo-img"
                 alt="Multitud sostien una persona en un concierto" />
@@ -348,12 +348,10 @@
                 <input type="text" id="nombre" class="contactoCampo--valido" placeholder="Nombre..." required />
               </div>
 
-              <div class="contactoCampo contactoCampo--error">
+              <div class="contactoCampo">
                 <label for="email">Email: </label>
-                <input id="email" type="email" class="contactoCampo--noValido" required placeholder="Email..." />
-                <span class="contactoCampo-msg contactoCampo-msg--error">
-                  ¿Quieres decir <a href="#">gmail.com?</a>
-                </span>
+                <input id="email" type="email" required placeholder="Email..." />
+                <span id="sugestion" class="contactoCampo-msg contactoCampo-msg--error"></span>
               </div>
 
               <div class="contactoCampo contactoCampo--error">
@@ -369,12 +367,14 @@
 
               <div class="contactoCampo">
                 <label for="direccion">Dirección: </label>
-                <input id="direccion" type="text" class="contactoCampo-campoDeshabilitado" readonly value="Calle Vergueiro" />
+                <input id="direccion" type="text" class="contactoCampo-campoDeshabilitado" readonly
+                  value="Calle Vergueiro" />
               </div>
 
               <div class="contactoCampo">
                 <label for="barrio">Barrio: </label>
-                <input id="barrio" type="text" class="contactoCampo-campoDeshabilitado" disabled value="Villa Mariana" />
+                <input id="barrio" type="text" class="contactoCampo-campoDeshabilitado" disabled
+                  value="Villa Mariana" />
               </div>
 
               <div class="contactoCampo">
@@ -502,14 +502,16 @@
       </form>
     </div>
     <div class="ventanaNewsletter-overlay"></div>
-	<!-- final .ventanaNewsletter-->
+    <!-- final .ventanaNewsletter-->
 
-  <!-- inicio de los scripts -->
-  <script src="js/carousel.js"></script>
-  <script src="js/inert.js"></script>
-  <script src="js/ventanaEmergente.js"></script>
-  <script src="js/validacionCodigoPostal.js"></script>
-  <!-- Fin de los scripts -->
+    <!-- inicio de los scripts -->
+    <script src="js/carousel.js"></script>
+    <script src="js/inert.js"></script>
+    <script src="js/ventanaEmergente.js"></script>
+    <script src="js/validacionCodigoPostal.js"></script>
+    <script src="js/mailcheck.js"></script>
+    <script src="js/mailcheck_config.js"></script>
+    <!-- Fin de los scripts -->
 </body>
 
 </html>
