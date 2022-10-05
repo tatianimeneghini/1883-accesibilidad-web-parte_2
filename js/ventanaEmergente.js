@@ -1,7 +1,7 @@
 var contenidoFueraVentana = document.querySelector("#contenidoFueraVentana");
 var video = document.querySelector("video");
 
-var btnAbreVentana = document.querySelector('#abreVentana');
+var btnAbreVentana = document.querySelector("#abreVentana");
 var ventana = document.querySelector(".ventanaNewsletter");
 var ventanaBody = document.querySelector(".ventanaNewsletter-body");
 var ventanaOverlay = document.querySelector(".ventanaNewsletter-overlay");
