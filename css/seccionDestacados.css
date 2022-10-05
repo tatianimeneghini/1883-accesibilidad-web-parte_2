@@ -6,7 +6,7 @@
 .seccionDestacados-destacado {
   margin-bottom: 1em;
   padding: 1em;
-  transition: 0.3s;
+  transition:  .3s;
   text-align: left;
 }
 
@@ -15,7 +15,7 @@
   text-decoration: none;
   max-width: 400px;
   display: inline-block;
-  margin: 1em 0.5em;
+  margin: 1em .5em;
 }
 
 .seccionDestacados-link:hover,
@@ -23,14 +23,14 @@
   background-color: #fff;
   cursor: pointer;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3); 
   outline: 0;
 }
 
 .seccionDestacados-destacado-titulo {
   margin-top: 1em;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.2em
 }
 
 .seccionDestacados-destacado-img {

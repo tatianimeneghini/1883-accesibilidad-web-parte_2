@@ -1,15 +1,17 @@
+var contenidoFueraVentana = document.querySelector("#contenidoFueraVentana");
+var video = document.querySelector("video");
+
+var btnAbreVentana = document.querySelector('#abreVentana');
 var ventana = document.querySelector(".ventanaNewsletter");
 var ventanaBody = document.querySelector(".ventanaNewsletter-body");
 var ventanaOverlay = document.querySelector(".ventanaNewsletter-overlay");
-var contenidoFueraVentana = document.querySelector("#contenidoFueraVentana");
-var video = document.querySelector("video");
 
 btnAbreVentana.style.display="block";
 
 // Cuando abrir la ventana...
 btnAbreVentana.addEventListener("click", function () {
   ventana.classList.add("ventanaNewsletter--abierto");
-  document.querySelector(".ventanaNewsletter-campo").focus();
+  document.querySelector(".ventanaNewsletter-label").focus();
   contenidoFueraVentana.inert = true;
   video.removeAttribute("controls");
 });
@@ -23,14 +25,11 @@ function cerrandoVentana() {
 }
 
 // Listeners
-document
-  .querySelector(".ventanaNewsletter-cerrar")
-  .addEventListener("click", cerrandoVentana);
+document.querySelector(".ventanaNewsletter-cerrar").addEventListener("click", cerrandoVentana);
+ventanaOverlay.addEventListener("click", cerrandoVentana);
 
-  document.addEventListener("keyup", function(evento){
-    if (evento.keyCode == 27) {
-      cerrandoVentana();
-    }
-  });
-
-  ventanaOverlay.addEventListener("click", cerrandoVentana);
+document.addEventListener("keyup", function(evento){
+  if (evento.keyCode == 27) {
+    cerrandoVentana();
+  }
+});
